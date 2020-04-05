@@ -18,6 +18,10 @@ const routes: Routes = [
     path: "views",
     loadChildren: () => import("./views/views.module").then(m => m.ViewsModule)
   },
+  {
+    path: "modal",
+    loadChildren: () => import("./modal/modal.module").then(m => m.ModalModule)
+  },
   { path: "", component: HomeComponent },
   { path: "**", component: NotFoundComponent }
 ];
